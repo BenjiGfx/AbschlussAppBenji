@@ -1,4 +1,4 @@
 package com.example.abschlussappbenji.UI
 
-class Fragment2 {
+class Fragment_Infos {
 }

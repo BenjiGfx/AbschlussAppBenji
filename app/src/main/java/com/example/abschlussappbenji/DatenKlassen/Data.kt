@@ -1,4 +1,5 @@
 package com.example.abschlussappbenji.DatenKlassen
 
-class Klasse1 {
-}
+data class Data(
+    val data: TeamsList
+)
