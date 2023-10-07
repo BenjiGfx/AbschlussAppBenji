@@ -7,5 +7,13 @@
     <fragment
         android:id="@+id/fragment_Tabelle"
         android:name="com.example.abschlussappbenji.UI.Fragment_Tabelle"
-        android:label="Fragment_Tabelle" />
+        android:label="Fragment_Tabelle" >
+        <action
+            android:id="@+id/action_fragment_Tabelle_to_fragment_Spielplan"
+            app:destination="@id/fragment_Spielplan" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Spielplan"
+        android:name="com.example.abschlussappbenji.UI.Fragment_Spielplan"
+        android:label="Fragment_Spielplan" />
 </navigation>

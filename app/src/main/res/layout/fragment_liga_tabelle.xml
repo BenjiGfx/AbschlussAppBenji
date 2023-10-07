@@ -4,26 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF0000">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/ligatabelle_headline"
-        android:layout_width="match_parent"
+        android:layout_width="315dp"
         android:layout_height="50dp"
-        android:text="Bundesliga Tabelle"
-        android:textAlignment="center"
-        android:textColor="@color/white"
+        android:text="   Liga - Tabelle"
+        android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerview_liga_tabelle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_tabelle"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_liga_tabelle"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
+        android:background="@color/white"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,4 +31,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ligatabelle_headline"
         tools:listitem="@layout/list_item_tabelle" />
+
+    <ImageView
+        android:id="@+id/logo_tabelle"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerview_liga_tabelle"
+        app:layout_constraintEnd_toStartOf="@+id/ligatabelle_headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_liga_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>

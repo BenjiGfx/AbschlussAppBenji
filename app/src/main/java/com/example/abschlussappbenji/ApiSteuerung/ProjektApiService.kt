@@ -1,6 +1,7 @@
 package com.example.abschlussappbenji.ApiSteuerung
 
 import com.example.abschlussappbenji.DatenKlassen.DatenTabelle
+import com.example.abschlussappbenji.DatenKlassen.SpData
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
@@ -22,6 +23,9 @@ interface TeamApiService {
 
     @GET("getbltable/bl1/2023")
     suspend fun getTeam(): List<DatenTabelle>
+
+    @GET("getmatchdata/bl1/2023")
+    suspend fun getSpData(): List<SpData>
 
 }
 object TeamApi {

@@ -6,6 +6,7 @@
         android:layout_height="wrap_content"
         android:title="Home"
         android:icon="@drawable/baseline_home_24"
+
        />
     <item
         android:id="@+id/fragment_Tabelle"
@@ -17,5 +18,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/baseline_sports_soccer_24"
-        android:title="Spielplan" />
+        android:title="Spielplan"
+        android:id="@+id/fr"/>
 </menu>
