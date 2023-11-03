@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/fragment_Tabelle">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host_fragment"
+    app:startDestination="@id/fragment_Spielplan">
 
-    <fragment
-        android:id="@+id/fragment_Tabelle"
-        android:name="com.example.abschlussappbenji.UI.Fragment_Tabelle"
-        android:label="Fragment_Tabelle" >
-        <action
-            android:id="@+id/action_fragment_Tabelle_to_fragment_Spielplan"
-            app:destination="@id/fragment_Spielplan" />
-    </fragment>
     <fragment
         android:id="@+id/fragment_Spielplan"
         android:name="com.example.abschlussappbenji.UI.Fragment_Spielplan"
         android:label="Fragment_Spielplan" />
+    <fragment
+        android:id="@+id/fragment_Tabelle"
+        android:name="com.example.abschlussappbenji.UI.Fragment_Tabelle"
+        android:label="Fragment_Tabelle" />
+    <fragment
+        android:id="@+id/fragment_Infos"
+        android:name="com.example.abschlussappbenji.UI.Fragment_Infos"
+        android:label="Fragment_Infos" />
 </navigation>

@@ -2,22 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:title="Home"
-        android:icon="@drawable/baseline_home_24"
 
-       />
-    <item
+        android:title="Tabelle"
         android:id="@+id/fragment_Tabelle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:icon="@drawable/baseline_format_list_numbered_24"
-        android:title="Liga Tabelle" />
+        android:icon="@drawable/baseline_home_24"/>
     <item
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:icon="@drawable/baseline_sports_soccer_24"
+
         android:title="Spielplan"
-        android:id="@+id/fr"/>
+        android:id="@+id/fragment_Spielplan"
+        android:icon="@drawable/baseline_sports_soccer_24"/>
+    <item
+
+        android:title="Infos"
+        android:id="@+id/fragment_Infos"
+        android:icon="@drawable/baseline_format_list_numbered_24"/>
 </menu>
