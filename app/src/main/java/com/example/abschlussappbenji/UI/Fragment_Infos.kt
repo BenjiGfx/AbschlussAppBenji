@@ -17,6 +17,7 @@ class Fragment_Infos: Fragment() {
     private lateinit var binding: FragmentInfosBinding
 
 
+    //Hier wird die Logik aufgerufen und die XML-Datei ausgelesen und dem Fragment zur Verfügung gestellt.
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

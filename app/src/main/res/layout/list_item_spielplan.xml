@@ -9,10 +9,11 @@
         android:id="@+id/spielplan_list_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:contentPadding="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/black"
+        app:contentPadding="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,7 +26,8 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardview_teams"
                 android:layout_width="197.5dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -70,7 +72,8 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardview_ergebnis"
                 android:layout_width="197.5dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
