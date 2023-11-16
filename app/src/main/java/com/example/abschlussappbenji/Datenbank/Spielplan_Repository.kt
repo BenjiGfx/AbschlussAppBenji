@@ -21,6 +21,7 @@ class Spielplan_Repository(val SpielplanTeamApi: TeamApi){ // Hier wird eine Kla
 
         try {
             val newSpTeam = SpielplanTeamApi.apiService.getSpData()
+            Log.e(SPTAG, newSpTeam.toString())
             _currentspielplandata.postValue(newSpTeam)
         } catch (e:Exception) {
             Log.e(SPTAG, "Error loading Data from API: $e")
