@@ -8,18 +8,15 @@ import com.example.abschlussappbenji.DatenKlassen.DatenTabelle
 
 const val TAG = "RepositoryTAG"
 
-class Repository (val teamApi: TeamApi) {
+class Repository (val teamApi: TeamApi, val database: BundesligaDatabase) {
 
-    private val _currentteams = MutableLiveData<List<DatenTabelle>>()
-
-    val teams: LiveData<List<DatenTabelle>>
-        get() = _currentteams
+    val teams: LiveData<List<DatenTabelle>> = database.dao.getAllTableData()
 
     suspend fun getTeams() {
 
         try {
             val newTeam = teamApi.apiService.getTeam()
-            _currentteams.postValue(newTeam)
+            database.dao.insertTableData(newTeam)
         } catch (e: Exception) {
             Log.e(TAG, "Error loading Data from Api: $e")
         }
